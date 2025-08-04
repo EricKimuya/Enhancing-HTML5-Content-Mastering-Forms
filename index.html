@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HTML5 page with lists, tables, media, and a fully-featured form using semantic structure and native validation.">
+  <title>Enhanced HTML5 Page & Form</title>
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates HTML5 features including lists, tables, media content, and an accessible, validated form.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>My Favorite Programming Languages</h2>
+
+    <h3>Ordered List</h3>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML & CSS</li>
+      <li>Java</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>VS Code</li>
+      <li>GitHub</li>
+      <li>Stack Overflow</li>
+      <li>ChatGPT</li>
+    </ul>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Course</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>JavaScript Basics</td>
+          <td>2:00 PM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Python for Web</td>
+          <td>11:00 AM - 1:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Media Showcase</h2>
+
+    <h3>Image</h3>
+    <img src="https://via.placeholder.com/300x150" alt="Sample placeholder image">
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="300">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section: Form -->
+  <section>
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" minlength="3"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9_]{5,15}$" required placeholder="e.g., user123"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Tell us about yourself..."></textarea><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Please choose--</option>
+          <option value="kenya">Kenya</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="uganda">Uganda</option>
+        </select><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked readonly><br><br>
+      </fieldset>
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eric Kimuya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
